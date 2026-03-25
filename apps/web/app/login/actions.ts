@@ -12,6 +12,7 @@ export async function login(formData: FormData) {
     password: "Seven1104!",
   }
   const { error } = await singInWithEmailAndPassword(data)
+
   if (error) {
     return { error }
   }

@@ -23,6 +23,7 @@ export async function singInWithEmailAndPassword(data: {
   password: string
 }) {
   const supabase = await createServer()
+
   const result = await supabase.auth.signInWithPassword({
     email: data.email,
     password: data.password,
